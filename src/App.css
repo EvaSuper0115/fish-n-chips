@@ -1,0 +1,37 @@
+:root {
+  --main-font-family: "Inter";
+  --main-font-weight: 400;
+}
+body {
+  font-family: var(--main-font-family);
+  font-weight: var(--main-font-weight);
+}
+.page-divider {
+  margin: 3vh;
+}
+.PageHero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/fish-n-chips-page-hero.png);
+}
+.white-text {
+  color: #ffffff;
+}
+.icon-adjustments {
+  width: 3.3vh;
+  border-radius: 5px;
+  padding: 2px;
+}
+.pagehero-top-grid {
+  display: grid;
+  grid-template-columns: 8fr 1fr 1fr;
+}
+.float-end {
+  justify-self: flex-end;
+}
+.float-center {
+  justify-self: center;
+}

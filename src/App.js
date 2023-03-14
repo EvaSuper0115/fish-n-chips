@@ -1,5 +1,5 @@
 import "./App.css";
-
+import PageHero from "./PageHero";
 function App() {
   return (
     <div className="App">
@@ -69,7 +69,7 @@ function App() {
           </ul>
         </div>
       </nav>
-      <div className="page-divider"></div>
+      <PageHero />
     </div>
   );
 }
