@@ -3,8 +3,8 @@ import PageHero from "./PageHero";
 function App() {
   return (
     <div className="App">
-      <nav className="navbar sticky-top navbar-expand-lg navbar-light bg-light">
-        <a className="navbar-brand" href="#">
+      <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
+        <a className="navbar-brand brand high-light-text" href="#">
           Adastral Fish & Chips
         </a>
         <button
@@ -21,19 +21,19 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="#">
+              <a className="nav-link high-light-text" href="#">
                 Home
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link high-light-text" href="#">
                 Hours
               </a>
             </li>
 
             <li className="nav-item dropdown">
               <a
-                className="nav-link dropdown-toggle"
+                className="nav-link high-light-text dropdown-toggle"
                 href="#"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
@@ -43,7 +43,7 @@ function App() {
                 Menu
               </a>
               <div
-                className="dropdown-menu"
+                className="dropdown-menu dropdown-menu-text"
                 aria-labelledby="navbarDropdownMenuLink"
               >
                 <a className="dropdown-item" href="#">
