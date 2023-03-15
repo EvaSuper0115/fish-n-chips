@@ -28,6 +28,7 @@ export default function PageHero() {
             </div>
           </a>
           <a
+            className="display-none-when-extra-small"
             href="https://www.facebook.com/adastralfishnchips"
             target="_blank"
             rel="noreferrer"
@@ -39,6 +40,7 @@ export default function PageHero() {
             ></img>
           </a>
           <a
+            className="display-none-when-extra-small"
             href="https://www.instagram.com/adastralfishnchips/"
             target="_blank"
             rel="noreferrer"
@@ -54,7 +56,7 @@ export default function PageHero() {
           <h1 className="largeHeading white-text text-center ">
             Adastral Fish & Chips
           </h1>
-          <h2 className="subHeading secondary-text-color text-center">
+          <h2 className="subHeading secondary-text-color text-center display-none-when-extra-small">
             Delicious freshly cooked fish & chips
           </h2>
         </section>
