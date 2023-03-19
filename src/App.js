@@ -1,5 +1,6 @@
 import "./App.css";
 import PageHero from "./PageHero";
+import IntroductionPage from "./IntroductionPage";
 function App() {
   return (
     <div className="App">
@@ -21,7 +22,7 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link high-light-text" href="#">
+              <a className="nav-link high-light-text" href="">
                 Home
               </a>
             </li>
@@ -70,6 +71,7 @@ function App() {
         </div>
       </nav>
       <PageHero />
+      <IntroductionPage />
     </div>
   );
 }

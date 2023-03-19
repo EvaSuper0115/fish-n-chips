@@ -2,8 +2,7 @@ import React from "react";
 import GoogleMapIcon from "./images/Google_Maps_icon.png";
 import FacebookIcon from "./images/facebooklogo.png";
 import InstagramIcon from "./images/Instagram_icon.png";
-import JustEatIcon from "./images/justEat.png";
-import PhoneIcon from "./images/phone.png";
+import OrderGrid from "./OrderGrid";
 export default function PageHero() {
   return (
     <div className="PageHero">
@@ -65,36 +64,7 @@ export default function PageHero() {
             Menu
           </a>
         </div>
-        <div className="order-grid ">
-          <a
-            className="float-end"
-            href="https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <div className="white-text high-light-text">
-              <span>
-                <img
-                  className="icon-adjustments"
-                  src={JustEatIcon}
-                  alt="google-map-icon"
-                ></img>
-              </span>
-              Order on Just Eat
-            </div>
-          </a>
-
-          <div className="float-start">
-            <span>
-              <img
-                className="icon-adjustments"
-                src={PhoneIcon}
-                alt="google-map-icon"
-              ></img>
-            </span>
-            <span className="white-text high-light-text">07578 617349</span>
-          </div>
-        </div>
+        <OrderGrid textColor="white" />
       </div>
     </div>
   );
