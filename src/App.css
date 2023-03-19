@@ -24,6 +24,13 @@ a {
   grid-template-columns: 1fr 1fr;
   grid-gap: 20px;
 }
+.section-padding {
+  display: flex;
+  flex-direction: column; /* Stack child elements vertically */
+  justify-content: center;
+  height: 100vh;
+  padding: 0 50px;
+}
 .navbar-decoration,
 .dropdown-menu {
   background: linear-gradient(
@@ -75,6 +82,14 @@ a {
   display: block;
   margin: 20vh auto 5vh auto;
 }
+.black-large-title {
+  font-family: var(--large-heading-font-family);
+  text-align: center;
+  padding: 40px 0;
+}
+.black-subtitle {
+  font-family: var(--sub-heading-font-family);
+}
 .brand {
   font-family: var(--large-heading-font-family);
 }
@@ -88,6 +103,11 @@ a {
   background: rgba(79, 173, 212, 0.16);
   padding: 8px 0;
 }
+.itallic-subHeading {
+  font-family: var(--sub-heading-font-family);
+  font-size: 30px;
+  font-style: italic;
+}
 .button {
   color: white;
   background: #4fadd4;
@@ -98,6 +118,7 @@ a {
 .center-content {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .icon-adjustments {
   width: 7vh;
@@ -119,7 +140,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 5px;
-  margin: 5vh auto;
+  margin: 1vh auto;
 }
 .float-end {
   justify-self: flex-end;
@@ -139,7 +160,8 @@ a {
   .display-none-when-small {
     display: none;
   }
-  .order-grid {
+  .order-grid,
+  .half-a-page-grid {
     grid-template-columns: 1fr;
   }
   .float-end,
@@ -149,7 +171,8 @@ a {
   .largeHeading,
   .subHeading,
   .high-light-text,
-  .button {
+  .button,
+  .itallic-subHeading {
     transform: scale(0.8);
   }
 }
