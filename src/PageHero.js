@@ -60,9 +60,7 @@ export default function PageHero() {
           </h2>
         </section>
         <div className="center-content">
-          <a className="button" href="">
-            Menu
-          </a>
+          <a className="button">Menu</a>
         </div>
         <OrderGrid textColor="white" />
       </div>
