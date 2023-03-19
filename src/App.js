@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
-        <a className="navbar-brand brand high-light-text" href="#">
+        <a className="navbar-brand brand high-light-text">
           Adastral Fish & Chips
         </a>
         <button
@@ -22,20 +22,15 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link high-light-text" href="">
-                Home
-              </a>
+              <a className="nav-link high-light-text">Home</a>
             </li>
             <li className="nav-item">
-              <a className="nav-link high-light-text" href="#">
-                Hours
-              </a>
+              <a className="nav-link high-light-text">Hours</a>
             </li>
 
             <li className="nav-item dropdown">
               <a
                 className="nav-link high-light-text dropdown-toggle"
-                href="#"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
                 aria-haspopup="true"
@@ -47,24 +42,12 @@ function App() {
                 className="dropdown-menu dropdown-menu-text"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a className="dropdown-item" href="#">
-                  Fish & Chips
-                </a>
-                <a className="dropdown-item" href="#">
-                  Sausages & Burgers
-                </a>
-                <a className="dropdown-item" href="#">
-                  Pies & Chicken
-                </a>
-                <a className="dropdown-item" href="#">
-                  Others
-                </a>
-                <a className="dropdown-item" href="#">
-                  Children's meal
-                </a>
-                <a className="dropdown-item" href="#">
-                  Meal deal
-                </a>
+                <a className="dropdown-item">Fish & Chips</a>
+                <a className="dropdown-item">Sausages & Burgers</a>
+                <a className="dropdown-item">Pies & Chicken</a>
+                <a className="dropdown-item">Others</a>
+                <a className="dropdown-item">Children's meal</a>
+                <a className="dropdown-item">Meal deal</a>
               </div>
             </li>
           </ul>
