@@ -2,7 +2,7 @@ import React from "react";
 import fishNChipsImage from "./images/fish-chips.png";
 import pieNSauceImage from "./images/food-image-currysauce.png";
 import OrderGrid from "./OrderGrid";
-export default function () {
+export default function IntroductionPage() {
   return (
     <div className="IntroductionPage">
       <div className="half-a-page-grid">
