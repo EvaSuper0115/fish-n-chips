@@ -22,7 +22,7 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link high-light-text" href="#introPage">
+              <a className="nav-link high-light-text" href="#What-we-make">
                 {" "}
                 Home
               </a>
@@ -56,8 +56,8 @@ function App() {
           </ul>
         </div>
       </nav>
-      <PageHero />
-      <IntroductionPage id="introPage" />
+      <PageHero id="Home" />
+      <IntroductionPage id="What-we-make" />
     </div>
   );
 }

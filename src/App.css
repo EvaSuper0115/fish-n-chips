@@ -26,7 +26,7 @@ a {
 }
 .section-padding {
   display: flex;
-  flex-direction: column; /* Stack child elements vertically */
+  flex-direction: column;
   justify-content: center;
   height: 100vh;
   padding: 0 50px;
