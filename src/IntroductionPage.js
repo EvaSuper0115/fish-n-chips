@@ -34,7 +34,7 @@ export default function IntroductionPage() {
               <img
                 className="sqaure-image"
                 src={pieNSauceImage}
-                alr="pieNSauce"
+                alt="pieNSauce"
               ></img>
             </div>
             <h2 className="black-large-title">Order Now</h2>
