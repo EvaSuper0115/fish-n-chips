@@ -29,7 +29,9 @@ function App() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link high-light-text">Hours</a>
+              <a className="nav-link high-light-text" href="#opening-hours">
+                Hours
+              </a>
             </li>
 
             <li className="nav-item dropdown">
