@@ -1,6 +1,7 @@
 import "./App.css";
 import PageHero from "./PageHero";
 import IntroductionPage from "./IntroductionPage";
+import OpeningHours from "./OpeningHours";
 function App() {
   return (
     <div className="App">
@@ -58,6 +59,7 @@ function App() {
       </nav>
       <PageHero id="Home" />
       <IntroductionPage id="What-we-make" />
+      <OpeningHours id="opening-hours" />
     </div>
   );
 }

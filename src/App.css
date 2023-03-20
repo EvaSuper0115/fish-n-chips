@@ -90,6 +90,7 @@ img {
 }
 .black-subtitle {
   font-family: var(--sub-heading-font-family);
+  font-size: 22px;
 }
 .brand {
   font-family: var(--large-heading-font-family);
