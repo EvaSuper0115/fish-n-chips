@@ -19,7 +19,7 @@ export default function OrderGrid(props) {
               alt="google-map-icon"
             ></img>
           </span>
-          <span style={{ color: props.textColor }}>Order on Just Eat</span>
+          <span style={{ color: props.textColor }}>Order here</span>
         </div>
       </a>
 
@@ -32,7 +32,7 @@ export default function OrderGrid(props) {
           ></img>
         </span>
         <span style={{ color: props.textColor }} className="high-light-text">
-          07578 617349
+          07578617349
         </span>
       </div>
     </div>

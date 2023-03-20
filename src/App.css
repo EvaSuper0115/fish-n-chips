@@ -18,7 +18,9 @@ a:hover {
   transform: scale(1.01);
   filter: brightness(120%);
 }
-
+img {
+  border-radius: 5px;
+}
 .page-divider {
   margin: 3vh 0;
 }
@@ -73,7 +75,7 @@ a:hover {
   color: #ffffff;
 }
 .secondary-text-color {
-  color: #4fadd4;
+  color: #97dfff;
 }
 .high-light-text {
   font-size: 23px;
