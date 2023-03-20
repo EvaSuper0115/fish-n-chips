@@ -3,6 +3,8 @@
   --main-font-weight: 400;
   --large-heading-font-family: "Libre Baskerville";
   --sub-heading-font-family: "Playfair Display";
+  --transition: all 200ms ease-in-out;
+  --shadow: 2px 1px 5px rgb(109, 109, 109);
 }
 body {
   font-family: var(--main-font-family);
@@ -10,6 +12,11 @@ body {
 }
 a {
   text-decoration: none;
+  transition: var(--transition);
+}
+a:hover {
+  transform: scale(1.01);
+  filter: brightness(120%);
 }
 
 .page-divider {
@@ -25,11 +32,7 @@ a {
   grid-gap: 20px;
 }
 .section-padding {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  padding: 0 50px;
+  padding: 40px 50px;
 }
 .navbar-decoration,
 .dropdown-menu {
@@ -82,7 +85,6 @@ a {
 .black-large-title {
   font-family: var(--large-heading-font-family);
   text-align: center;
-  padding: 40px 0;
 }
 .black-subtitle {
   font-family: var(--sub-heading-font-family);
