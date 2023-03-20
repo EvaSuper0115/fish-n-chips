@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
-        <a className="navbar-brand brand high-light-text">
+        <a className="navbar-brand brand high-light-text" href="index.html">
           Adastral Fish & Chips
         </a>
         <button
@@ -22,7 +22,10 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link high-light-text">Home</a>
+              <a className="nav-link high-light-text" href="index.html">
+                {" "}
+                Home
+              </a>
             </li>
             <li className="nav-item">
               <a className="nav-link high-light-text">Hours</a>
