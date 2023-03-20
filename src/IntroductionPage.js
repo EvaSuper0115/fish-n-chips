@@ -2,9 +2,9 @@ import React from "react";
 import fishNChipsImage from "./images/fish-chips.png";
 import pieNSauceImage from "./images/food-image-currysauce.png";
 import OrderGrid from "./OrderGrid";
-export default function IntroductionPage() {
+export default function IntroductionPage(props) {
   return (
-    <div className="IntroductionPage">
+    <div className="IntroductionPage" id={props.id}>
       <div className="half-a-page-grid">
         <div className="introduction-half-page-image">
           <div className="section-padding">
