@@ -1,4 +1,7 @@
 import React from "react";
+import OrderGrid from "./OrderGrid";
+import DeliverooLogo from "./images/Deliveroo.png";
+import JustEatLogo from "./images/justEat.png";
 export default function OpeningHours(props) {
   return (
     <div className="OpeningHours" id={props.id}>
@@ -6,7 +9,30 @@ export default function OpeningHours(props) {
         <div className="half-a-page-content">
           <div className="section-padding">
             <h2 className="black-large-title">Opening Hours</h2>
-            <p>Monday - Thursday</p>
+            <p>
+              Monday - Thursday
+              <br />
+              4:30pm - 8:30pm
+            </p>
+            <p>
+              Friday & Saturday
+              <br />
+              12pm - 2pm & 4:30pm - 8:30pm
+            </p>
+            <p>Sunday Closed</p>
+            <p>
+              We have moved our delivery service to Just Eat & Deliveroo. This
+              will enable us to take order & deliver much quicker throughout our
+              opening hours.
+            </p>
+            <h2 className="black-large-title">Delivery & Collection</h2>
+            <OrderGrid
+              textColor="black"
+              logo1={JustEatLogo}
+              logo2={DeliverooLogo}
+              link1={`https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button`}
+              link2={`https://deliveroo.co.uk/menu/Bournemouth/canford-heath-nuffield-industrial-estate/adastral-fish-and-chips?geohash=gcn8em33sn57`}
+            />
           </div>
         </div>
       </div>

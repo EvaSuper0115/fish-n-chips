@@ -2,6 +2,9 @@ import React from "react";
 import fishNChipsImage from "./images/fish-chips.png";
 import pieNSauceImage from "./images/food-image-currysauce.png";
 import OrderGrid from "./OrderGrid";
+import JustEatLogo from "./images/justEat.png";
+import PhoneIcon from "./images/phone.png";
+
 export default function IntroductionPage(props) {
   return (
     <div className="IntroductionPage" id={props.id}>
@@ -38,7 +41,12 @@ export default function IntroductionPage(props) {
               ></img>
             </div>
             <h2 className="black-large-title">Order Now</h2>
-            <OrderGrid textColor="black" />
+            <OrderGrid
+              textColor="black"
+              logo1={JustEatLogo}
+              logo2={PhoneIcon}
+              link1={`https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button`}
+            />
           </div>
         </div>
       </div>

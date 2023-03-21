@@ -3,6 +3,9 @@ import GoogleMapIcon from "./images/Google_Maps_icon.png";
 import FacebookIcon from "./images/facebooklogo.png";
 import InstagramIcon from "./images/Instagram_icon.png";
 import OrderGrid from "./OrderGrid";
+import JustEatLogo from "./images/justEat.png";
+import PhoneIcon from "./images/phone.png";
+
 export default function PageHero() {
   return (
     <div className="PageHero">
@@ -62,7 +65,12 @@ export default function PageHero() {
         <div className="center-content">
           <a className="button">Menu</a>
         </div>
-        <OrderGrid textColor="white" />
+        <OrderGrid
+          textColor="white"
+          logo1={JustEatLogo}
+          logo2={PhoneIcon}
+          link1={`https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button`}
+        />
       </div>
     </div>
   );

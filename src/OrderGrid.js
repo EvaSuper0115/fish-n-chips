@@ -1,13 +1,11 @@
 import React from "react";
-import JustEatIcon from "./images/justEat.png";
-import PhoneIcon from "./images/phone.png";
 
 export default function OrderGrid(props) {
   return (
     <div className="order-grid ">
       <a
         className="float-end"
-        href="https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button"
+        href={props.link1}
         target="_blank"
         rel="noreferrer"
       >
@@ -15,26 +13,30 @@ export default function OrderGrid(props) {
           <span>
             <img
               className="icon-adjustments"
-              src={JustEatIcon}
+              src={props.logo1}
               alt="google-map-icon"
             ></img>
           </span>
           <span style={{ color: props.textColor }}>Order here</span>
         </div>
       </a>
-
-      <div className="float-start">
+      <a
+        className="float-start"
+        href={props.link2}
+        target="_blank"
+        rel="noreferrer"
+      >
         <span>
           <img
             className="icon-adjustments"
-            src={PhoneIcon}
+            src={props.logo2}
             alt="google-map-icon"
           ></img>
         </span>
         <span style={{ color: props.textColor }} className="high-light-text">
-          07578617349
+          {props.content}
         </span>
-      </div>
+      </a>
     </div>
   );
 }
