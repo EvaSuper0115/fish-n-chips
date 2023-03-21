@@ -9,18 +9,20 @@ export default function OpeningHours(props) {
         <div className="half-a-page-content">
           <div className="section-padding">
             <h2 className="black-large-title">Opening Hours</h2>
-            <p>
-              Monday - Thursday
-              <br />
-              4:30pm - 8:30pm
-            </p>
-            <p>
-              Friday & Saturday
-              <br />
-              12pm - 2pm & 4:30pm - 8:30pm
-            </p>
-            <p>Sunday Closed</p>
-            <p>
+            <div className="list-of-info">
+              <p>
+                Monday - Thursday
+                <br />
+                4:30pm - 8:30pm
+              </p>
+              <p>
+                Friday & Saturday
+                <br />
+                12pm - 2pm & 4:30pm - 8:30pm
+              </p>
+              <p>Sunday Closed</p>
+            </div>
+            <p className="paragraph-of-small-info">
               We have moved our delivery service to Just Eat & Deliveroo. This
               will enable us to take order & deliver much quicker throughout our
               opening hours.
@@ -36,6 +38,7 @@ export default function OpeningHours(props) {
             />
           </div>
         </div>
+        <div className="opening-hours-half-page-image"></div>
       </div>
     </div>
   );

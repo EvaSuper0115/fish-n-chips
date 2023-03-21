@@ -21,7 +21,7 @@ export default function OrderGrid(props) {
         </div>
       </a>
       <a
-        className="float-start"
+        className="float-start high-light-text"
         href={props.link2}
         target="_blank"
         rel="noreferrer"
@@ -33,9 +33,7 @@ export default function OrderGrid(props) {
             alt="google-map-icon"
           ></img>
         </span>
-        <span style={{ color: props.textColor }} className="high-light-text">
-          {props.content}
-        </span>
+        <span style={{ color: props.textColor }}>{props.content}</span>
       </a>
     </div>
   );

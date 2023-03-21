@@ -8,7 +8,7 @@ import PhoneIcon from "./images/phone.png";
 
 export default function PageHero() {
   return (
-    <div className="PageHero">
+    <div className="PageHero ">
       <div className="">
         <div className="pagehero-top-grid">
           <a

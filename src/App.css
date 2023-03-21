@@ -35,6 +35,7 @@ img {
 }
 .section-padding {
   padding: 40px 50px;
+  min-height: 90vh;
 }
 .navbar-decoration,
 .dropdown-menu {
@@ -59,7 +60,8 @@ img {
   min-height: 100vh;
   width: 100%;
 }
-.introduction-half-page-image {
+.introduction-half-page-image,
+.opening-hours-half-page-image {
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.799),
@@ -70,7 +72,14 @@ img {
   background-size: cover;
   background-position: center;
 }
-
+.opening-hours-half-page-image {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.799),
+      rgba(0, 0, 0, 0.41)
+    ),
+    url(images/were-open.jpg);
+}
 .white-text {
   color: #ffffff;
 }
@@ -87,6 +96,7 @@ img {
 .black-large-title {
   font-family: var(--large-heading-font-family);
   text-align: center;
+  padding: 18px 0;
 }
 .black-subtitle {
   font-family: var(--sub-heading-font-family);
@@ -109,6 +119,13 @@ img {
   font-family: var(--sub-heading-font-family);
   font-size: 30px;
   font-style: italic;
+}
+.list-of-info {
+  text-align: center;
+}
+.paragraph-of-small-info {
+  text-align: center;
+  font-size: 13px;
 }
 .button {
   color: white;
@@ -184,5 +201,9 @@ img {
   }
   .display-none-when-extra-small {
     display: none;
+  }
+  .section-padding {
+    padding: 40px 15px;
+    min-height: 100vh;
   }
 }
