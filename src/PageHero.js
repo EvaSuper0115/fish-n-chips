@@ -10,7 +10,7 @@ import PhoneIcon from "./images/phone.png";
 export default function PageHero() {
   return (
     <div className="PageHero">
-      <div className="section-padding">
+      <div className="page-hero-section-padding">
         <div className="pagehero-top-grid">
           <a
             href="https://goo.gl/maps/Z7tGC88AYkEfxXTd9"
@@ -62,7 +62,7 @@ export default function PageHero() {
           <h1 className="largeHeading white-text text-center ">
             Adastral Fish & Chips
           </h1>
-          <h2 className="subHeading secondary-text-color text-center display-none-when-extra-small">
+          <h2 className="subHeading secondary-text-color text-center">
             Delicious freshly cooked fish & chips
           </h2>
         </section>
