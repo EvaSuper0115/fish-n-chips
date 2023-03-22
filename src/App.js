@@ -2,6 +2,7 @@ import "./App.css";
 import PageHero from "./PageHero";
 import IntroductionPage from "./IntroductionPage";
 import OpeningHours from "./OpeningHours";
+import PartyCatering from "./PartyCatering";
 function App() {
   return (
     <div className="App">
@@ -33,7 +34,11 @@ function App() {
                 Hours
               </a>
             </li>
-
+            <li className="nav-item">
+              <a className="nav-link high-light-text" href="#party-catering">
+                Party
+              </a>
+            </li>
             <li className="nav-item dropdown">
               <a
                 className="nav-link high-light-text dropdown-toggle"
@@ -62,6 +67,7 @@ function App() {
       <PageHero id="Home" />
       <IntroductionPage id="What-we-make" />
       <OpeningHours id="opening-hours" />
+      <PartyCatering id="party-catering" />
     </div>
   );
 }

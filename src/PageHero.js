@@ -2,6 +2,7 @@ import React from "react";
 import GoogleMapIcon from "./images/Google_Maps_icon.png";
 import FacebookIcon from "./images/facebooklogo.png";
 import InstagramIcon from "./images/Instagram_icon.png";
+import MenuButton from "./MenuButton";
 import OrderGrid from "./OrderGrid";
 import JustEatLogo from "./images/justEat.png";
 import PhoneIcon from "./images/phone.png";
@@ -62,9 +63,7 @@ export default function PageHero() {
             Delicious freshly cooked fish & chips
           </h2>
         </section>
-        <div className="center-content">
-          <a className="button">Menu</a>
-        </div>
+        <MenuButton />
         <OrderGrid
           textColor="white"
           logo1={JustEatLogo}
