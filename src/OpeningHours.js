@@ -6,7 +6,15 @@ export default function OpeningHours(props) {
   return (
     <div className="OpeningHours" id={props.id}>
       <div className="half-a-page-grid">
-        <div className="opening-hours-half-page-image"></div>
+        <div className="opening-hours-half-page-image">
+          {" "}
+          <div className="section-padding">
+            <h3 className="white-text largeHeading">We're Open !</h3>
+            <p className="secondary-text-color itallic-subHeading">
+              All are welcome.
+            </p>
+          </div>
+        </div>
         <div className="half-a-page-content">
           <div className="section-padding">
             <h2 className="black-large-title">Opening Hours</h2>
