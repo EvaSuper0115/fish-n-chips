@@ -6,6 +6,7 @@ export default function OpeningHours(props) {
   return (
     <div className="OpeningHours" id={props.id}>
       <div className="half-a-page-grid">
+        <div className="opening-hours-half-page-image"></div>
         <div className="half-a-page-content">
           <div className="section-padding">
             <h2 className="black-large-title">Opening Hours</h2>
@@ -38,7 +39,6 @@ export default function OpeningHours(props) {
             />
           </div>
         </div>
-        <div className="opening-hours-half-page-image"></div>
       </div>
     </div>
   );
