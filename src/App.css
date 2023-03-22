@@ -169,8 +169,9 @@ img {
   text-align: center;
 }
 .MapEmbed {
-  aspect-ratio: 1/1;
-  width: 5px;
+  border-radius: 10px;
+  width: 100%;
+  aspect-ratio: 2/1;
 }
 
 @media (max-width: 820px) {
@@ -188,11 +189,14 @@ img {
 
   .subHeading,
   .high-light-text,
-  .button {
+  .MenuButton {
     transform: scale(0.8);
   }
   .section-padding {
     min-height: 100%;
+  }
+  .MapEmbed {
+    aspect-ratio: 1.5/1;
   }
 }
 @media (max-width: 576px) {

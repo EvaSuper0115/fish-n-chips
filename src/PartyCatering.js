@@ -1,5 +1,6 @@
 import React from "react";
 import MenuButton from "./MenuButton";
+import MapEmbed from "./MapEmbed";
 export default function PartyCatering(props) {
   return (
     <div className="PartyCatering" id={props.id}>
@@ -17,9 +18,13 @@ export default function PartyCatering(props) {
         </div>
         <div className="half-a-page-content">
           <div className="section-padding">
-            <h2 className="black-large-title">Just let us know.</h2>
+            <h2 className="black-large-title">Just come and let us know.</h2>
             <MenuButton />
-            <h2 className="black-large-title">We take care of the rest.</h2>
+            <h2 className="black-large-title">
+              We take care of the rest.
+            </h2>{" "}
+            <p>Find us</p>
+            <MapEmbed />
           </div>
         </div>
       </div>

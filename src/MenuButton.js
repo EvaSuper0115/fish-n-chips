@@ -3,7 +3,9 @@ export default function MenuButton() {
   return (
     <div className="MenuButton">
       <div className="center-content">
-        <a className="button">Menu</a>
+        <a className="button" title="View Menu">
+          Menu
+        </a>
       </div>
     </div>
   );

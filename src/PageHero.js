@@ -16,6 +16,7 @@ export default function PageHero() {
             href="https://goo.gl/maps/Z7tGC88AYkEfxXTd9"
             target="_blank"
             rel="noreferrer"
+            title="Adastral Fish n Chips on Google Maps"
           >
             <div className="white-text">
               <span>
@@ -35,6 +36,7 @@ export default function PageHero() {
             href="https://www.facebook.com/adastralfishnchips"
             target="_blank"
             rel="noreferrer"
+            title="Adastral Fish n Chips Facebook"
           >
             <img
               className="icon-adjustments float-end"
@@ -47,6 +49,7 @@ export default function PageHero() {
             href="https://www.instagram.com/adastralfishnchips/"
             target="_blank"
             rel="noreferrer"
+            title="Adastral Fish n Chips Instagram"
           >
             <img
               className="icon-adjustments float-center"

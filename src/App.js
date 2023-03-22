@@ -8,7 +8,11 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
-        <a className="navbar-brand brand high-light-text" href="index.html">
+        <a
+          className="navbar-brand brand high-light-text"
+          href="index.html"
+          title="Adastral Fish & Chips Homepage"
+        >
           Adastral Fish & Chips
         </a>
         <button
@@ -25,18 +29,30 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarNavDropdown">
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link high-light-text" href="#What-we-make">
+              <a
+                className="nav-link high-light-text"
+                href="#What-we-make"
+                title="What we make"
+              >
                 {" "}
-                Home
+                Specialty
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link high-light-text" href="#opening-hours">
+              <a
+                className="nav-link high-light-text"
+                href="#opening-hours"
+                title="Adastral Fish & Chips Opening Hours"
+              >
                 Hours
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link high-light-text" href="#party-catering">
+              <a
+                className="nav-link high-light-text"
+                href="#party-catering"
+                title="Adastral Fish & Chips Party Catering Service"
+              >
                 Party
               </a>
             </li>
@@ -47,6 +63,7 @@ function App() {
                 data-toggle="dropdown"
                 aria-haspopup="true"
                 aria-expanded="false"
+                title="Adastral Fish & Chips Menu"
               >
                 Menu
               </a>
@@ -54,12 +71,24 @@ function App() {
                 className="dropdown-menu dropdown-menu-text"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a className="dropdown-item">Fish & Chips</a>
-                <a className="dropdown-item">Sausages & Burgers</a>
-                <a className="dropdown-item">Pies & Chicken</a>
-                <a className="dropdown-item">Others</a>
-                <a className="dropdown-item">Children's meal</a>
-                <a className="dropdown-item">Meal deal</a>
+                <a className="dropdown-item" title="Fish & Chips Menu">
+                  Fish & Chips
+                </a>
+                <a className="dropdown-item" title="Sausages & Burgers Menu">
+                  Sausages & Burgers
+                </a>
+                <a className="dropdown-item" title="Pies & Chicken Menu">
+                  Pies & Chicken
+                </a>
+                <a className="dropdown-item" title="Others Menu">
+                  Others
+                </a>
+                <a className="dropdown-item" title="Children's meal Menu">
+                  Children's meal
+                </a>
+                <a className="dropdown-item" title="Meal deal Menu">
+                  Meal deal
+                </a>
               </div>
             </li>
           </ul>
