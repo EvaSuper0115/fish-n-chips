@@ -1,5 +1,6 @@
 import "./App.css";
 import PageHero from "./PageHero";
+
 import IntroductionPage from "./IntroductionPage";
 import OpeningHours from "./OpeningHours";
 import PartyCatering from "./PartyCatering";

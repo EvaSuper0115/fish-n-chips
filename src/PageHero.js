@@ -9,8 +9,8 @@ import PhoneIcon from "./images/phone.png";
 
 export default function PageHero() {
   return (
-    <div className="PageHero ">
-      <div className="">
+    <div className="PageHero">
+      <div className="section-padding">
         <div className="pagehero-top-grid">
           <a
             href="https://goo.gl/maps/Z7tGC88AYkEfxXTd9"
