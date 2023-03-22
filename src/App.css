@@ -48,9 +48,11 @@ img {
 }
 .PageHero {
   background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.799),
-      rgba(0, 0, 0, 0.41)
+      181deg,
+      rgba(20, 20, 20, 0.98) 0%,
+      rgba(26, 26, 26, 0.7) 36%,
+      rgba(9, 9, 9, 0.6) 60%,
+      rgba(14, 13, 13, 0.98) 95%
     ),
     url(images/fish-n-chips-page-hero.png);
   background-repeat: no-repeat;
@@ -65,18 +67,36 @@ img {
 .introduction-half-page-image,
 .opening-hours-half-page-image,
 .party-half-page-image {
-  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.41)),
+  background-image: linear-gradient(
+      181deg,
+      rgba(20, 20, 20, 0.98) 0%,
+      rgba(26, 26, 26, 0.7) 36%,
+      rgba(9, 9, 9, 0.6) 60%,
+      rgba(14, 13, 13, 0.98) 95%
+    ),
     url(images/introduction-page-bg.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
 .opening-hours-half-page-image {
-  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.41)),
+  background-image: linear-gradient(
+      181deg,
+      rgba(20, 20, 20, 0.98) 0%,
+      rgba(26, 26, 26, 0.7) 36%,
+      rgba(9, 9, 9, 0.6) 60%,
+      rgba(14, 13, 13, 0.98) 95%
+    ),
     url(images/were-open.jpg);
 }
 .party-half-page-image {
-  background-image: linear-gradient(0deg, rgb(0, 0, 0), rgba(0, 0, 0, 0.41)),
+  background-image: linear-gradient(
+      181deg,
+      rgba(20, 20, 20, 0.98) 0%,
+      rgba(26, 26, 26, 0.7) 36%,
+      rgba(9, 9, 9, 0.6) 60%,
+      rgba(14, 13, 13, 0.98) 95%
+    ),
     url(images/garden-party.jpg);
 }
 .white-text {
@@ -142,7 +162,7 @@ img {
   width: 7vh;
   border-radius: 5px;
   padding: 4px;
-  filter: brightness(120%);
+  filter: brightness(110%);
 }
 .sqaure-image {
   width: 100%;

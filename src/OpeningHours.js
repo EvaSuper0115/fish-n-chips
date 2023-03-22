@@ -11,7 +11,7 @@ export default function OpeningHours(props) {
           <div className="section-padding">
             <h3 className="white-text largeHeading">We're Open !</h3>
             <p className="secondary-text-color itallic-subHeading">
-              All are welcome.
+              All are welcome. Takeaways. Delivery. Collections.
             </p>
           </div>
         </div>
