@@ -4,12 +4,11 @@ export default function MenuFilter(props) {
     <div className="MenuFilter" id={props.id}>
       <h2 className="black-large-title">What food would you like ?</h2>
       <div className="menuTypeGrid">
-        <a className="menuType" href={props.menuPagehref[0]}>
-          {props.menuFilterTypes[0]}
-        </a>
-        <a className="menuType" href={props.menuPagehref[1]}>
-          {props.menuFilterTypes[1]}
-        </a>
+        {props.menuFilterTypes.map((menuType, index) => (
+          <a className="menuType" key={index} href={props.menuPagehref[index]}>
+            {menuType}
+          </a>
+        ))}
       </div>
     </div>
   );
