@@ -7,7 +7,7 @@ import OrderGrid from "./OrderGrid";
 import JustEatLogo from "./images/justEat.png";
 import PhoneIcon from "./images/phone.png";
 
-export default function PageHero() {
+export default function PageHero(props) {
   return (
     <div className="PageHero">
       <div className="page-hero-section-padding">
@@ -66,7 +66,7 @@ export default function PageHero() {
             Delicious freshly cooked fish & chips
           </h2>
         </section>
-        <MenuButton />
+        <MenuButton menuHref={props.menuHref} />
         <OrderGrid
           textColor="white"
           logo1={JustEatLogo}

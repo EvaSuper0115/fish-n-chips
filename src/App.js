@@ -3,8 +3,11 @@ import PageHero from "./PageHero";
 import IntroductionPage from "./IntroductionPage";
 import OpeningHours from "./OpeningHours";
 import PartyCatering from "./PartyCatering";
+import MenuFilter from "./MenuFilter";
 import MenuFishnChips from "./MenuFishnChips";
 function App() {
+  const menuHref = "#menu";
+  const menuPages = ["#fish-n-chips-menu"];
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
@@ -98,11 +101,11 @@ function App() {
           </ul>
         </div>
       </nav>
-      <PageHero id="Home" />
+      <PageHero id="Home" menuHref={menuHref} />
       <IntroductionPage id="What-we-make" />
       <OpeningHours id="opening-hours" />
-      <PartyCatering id="party-catering" />
-
+      <PartyCatering id="party-catering" menuHref={menuHref} />
+      <MenuFilter id="menu" menuPagehref={menuPages} />
       <MenuFishnChips id="fish-n-chips-menu" />
     </div>
   );

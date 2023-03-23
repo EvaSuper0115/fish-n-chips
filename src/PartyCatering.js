@@ -19,7 +19,7 @@ export default function PartyCatering(props) {
         <div className="half-a-page-content">
           <div className="section-padding">
             <h2 className="black-large-title">Just come and let us know.</h2>
-            <MenuButton />
+            <MenuButton menuHref={props.menuHref} />
             <h2 className="black-large-title">
               We take care of the rest.
             </h2>{" "}
