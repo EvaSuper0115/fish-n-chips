@@ -32,9 +32,9 @@ export default function OpeningHours(props) {
               <p>Sunday Closed</p>
             </div>
             <p className="paragraph-of-small-info">
-              We have moved our delivery service to Just Eat & Deliveroo. This
-              will enable us to take order & deliver much quicker throughout our
-              opening hours.
+              We have moved our delivery service to Just Eat & Deliveroo. <br />
+              This will enable us to take order & deliver much quicker
+              throughout our opening hours.
             </p>
             <h2 className="black-large-title">Delivery & Collection</h2>
             <OrderGrid
