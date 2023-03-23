@@ -4,7 +4,7 @@ export default function MenuSausagesBurgers(props) {
   return (
     <div className="MenuSausagesBurgers" id={props.id}>
       <div className="section-padding">
-        <h2 className="black-large-title">Sausages and Burgers Menu</h2>
+        <h2 className="black-large-title">Sausages & Burgers Menu</h2>
         <div className="menu-card-grid">
           <div className="menu-card">
             <h3 className="itallic-subHeading">Sausages</h3>

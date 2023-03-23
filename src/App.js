@@ -8,7 +8,8 @@ import MenuFishnChips from "./MenuFishnChips";
 import MenuSausagesBurgers from "./MenuSausagesBurgers";
 function App() {
   const menuHref = "#menu";
-  const menuPages = ["#fish-n-chips-menu"];
+
+  const menuPages = ["#fish-n-chips-menu", "#sausages-and-burgers-menu"];
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
@@ -78,11 +79,15 @@ function App() {
                 <a
                   className="dropdown-item"
                   title="Fish & Chips Menu"
-                  href="#fish-n-chips-menu"
+                  href={menuPages[0]}
                 >
                   Fish & Chips
                 </a>
-                <a className="dropdown-item" title="Sausages & Burgers Menu">
+                <a
+                  className="dropdown-item"
+                  title="Sausages & Burgers Menu"
+                  href={menuPages[1]}
+                >
                   Sausages & Burgers
                 </a>
                 <a className="dropdown-item" title="Pies & Chicken Menu">

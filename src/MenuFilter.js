@@ -7,6 +7,9 @@ export default function MenuFilter(props) {
         <a className="menuType" href={props.menuPagehref[0]}>
           Fish & Chips
         </a>
+        <a className="menuType" href={props.menuPagehref[1]}>
+          Sausages & Burgers
+        </a>
       </div>
     </div>
   );
