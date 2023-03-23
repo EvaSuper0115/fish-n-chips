@@ -5,7 +5,11 @@ export default function MenuFilter(props) {
       <h2 className="black-large-title">What food would you like ?</h2>
       <div className="menuTypeGrid">
         {props.menuFilterTypes.map((menuType, index) => (
-          <a className="menuType" key={index} href={props.menuPagehref[index]}>
+          <a
+            className="menuType white-text"
+            key={index}
+            href={props.menuPagehref[index]}
+          >
             {menuType}
           </a>
         ))}

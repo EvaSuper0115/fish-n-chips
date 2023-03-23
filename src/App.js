@@ -8,8 +8,13 @@ import MenuFishnChips from "./MenuFishnChips";
 import MenuSausagesBurgers from "./MenuSausagesBurgers";
 function App() {
   const menuHref = "#menu";
-  const menuFilterType = ["Fish & Chips", "Sausages & Burgers"];
-  const menuPages = ["#fish-n-chips-menu", "#sausages-and-burgers-menu"];
+  const menuFilterType = [
+    "Fish & Chips",
+    "Sausages & Burgers",
+    "Pies & Chicken",
+    "Others",
+  ];
+  const menuPagesHref = ["#fish-n-chips-menu", "#sausages-and-burgers-menu"];
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
@@ -79,14 +84,14 @@ function App() {
                 <a
                   className="dropdown-item"
                   title="Fish & Chips Menu"
-                  href={menuPages[0]}
+                  href={menuPagesHref[0]}
                 >
                   Fish & Chips
                 </a>
                 <a
                   className="dropdown-item"
                   title="Sausages & Burgers Menu"
-                  href={menuPages[1]}
+                  href={menuPagesHref[1]}
                 >
                   Sausages & Burgers
                 </a>
@@ -114,7 +119,7 @@ function App() {
       <MenuFilter
         id="menu"
         menuFilterTypes={menuFilterType}
-        menuPagehref={menuPages}
+        menuPagehref={menuPagesHref}
       />
       <MenuFishnChips id="fish-n-chips-menu" />
       <MenuSausagesBurgers id="sausages-and-burgers-menu" />
