@@ -22,8 +22,25 @@ export default function MenuSausagesBurgers(props) {
             <h3 className="itallic-subHeading">Burgers</h3>
             <MenuItemGrid
               food="Beef burger"
-              price={["Small £2.80 ", "Large £3.80"]}
+              price={["Small £2.80", "Large £3.80"]}
             />
+            <MenuItemGrid
+              food="Cheese burger"
+              price={["Small £3.10", "Large £4.10"]}
+            />
+            <MenuItemGrid
+              food="Chicken burger"
+              price={["Small £3.40", "Large £4.90"]}
+            />
+            <MenuItemGrid
+              food="Spicy chicken burger"
+              price={["Small £3.40", "Large £4.90"]}
+            />
+            <MenuItemGrid
+              food="Veggie burger"
+              price={["Small £3", "Large £4"]}
+            />
+            <MenuItemGrid food="Extra cheese or pineapple" price={["£0.30"]} />
           </div>
         </div>
       </div>
