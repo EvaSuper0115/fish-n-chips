@@ -5,6 +5,7 @@ import OpeningHours from "./OpeningHours";
 import PartyCatering from "./PartyCatering";
 import MenuFilter from "./MenuFilter";
 import MenuFishnChips from "./MenuFishnChips";
+import MenuSausagesBurgers from "./MenuSausagesBurgers";
 function App() {
   const menuHref = "#menu";
   const menuPages = ["#fish-n-chips-menu"];
@@ -107,6 +108,7 @@ function App() {
       <PartyCatering id="party-catering" menuHref={menuHref} />
       <MenuFilter id="menu" menuPagehref={menuPages} />
       <MenuFishnChips id="fish-n-chips-menu" />
+      <MenuSausagesBurgers id="sausages-and-burgers-menu" />
     </div>
   );
 }
