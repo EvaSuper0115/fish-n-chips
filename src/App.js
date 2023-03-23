@@ -1,9 +1,9 @@
 import "./App.css";
 import PageHero from "./PageHero";
-
 import IntroductionPage from "./IntroductionPage";
 import OpeningHours from "./OpeningHours";
 import PartyCatering from "./PartyCatering";
+import MenuFishnChips from "./MenuFishnChips";
 function App() {
   return (
     <div className="App">
@@ -98,6 +98,7 @@ function App() {
       <IntroductionPage id="What-we-make" />
       <OpeningHours id="opening-hours" />
       <PartyCatering id="party-catering" />
+      <MenuFishnChips id="fish-n-chips-menu" />
     </div>
   );
 }
