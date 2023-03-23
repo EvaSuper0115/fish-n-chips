@@ -71,7 +71,11 @@ function App() {
                 className="dropdown-menu dropdown-menu-text"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a className="dropdown-item" title="Fish & Chips Menu">
+                <a
+                  className="dropdown-item"
+                  title="Fish & Chips Menu"
+                  href="#fish-n-chips-menu"
+                >
                   Fish & Chips
                 </a>
                 <a className="dropdown-item" title="Sausages & Burgers Menu">
@@ -98,6 +102,7 @@ function App() {
       <IntroductionPage id="What-we-make" />
       <OpeningHours id="opening-hours" />
       <PartyCatering id="party-catering" />
+
       <MenuFishnChips id="fish-n-chips-menu" />
     </div>
   );
