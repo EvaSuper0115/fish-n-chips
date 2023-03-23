@@ -5,10 +5,10 @@ export default function MenuFilter(props) {
       <h2 className="black-large-title">What food would you like ?</h2>
       <div className="menuTypeGrid">
         <a className="menuType" href={props.menuPagehref[0]}>
-          Fish & Chips
+          {props.menuFilterTypes[0]}
         </a>
         <a className="menuType" href={props.menuPagehref[1]}>
-          Sausages & Burgers
+          {props.menuFilterTypes[1]}
         </a>
       </div>
     </div>
