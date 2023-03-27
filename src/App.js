@@ -88,14 +88,14 @@ function App() {
                   title="Fish & Chips Menu"
                   href={menuPagesHref[0]}
                 >
-                  Fish & Chips
+                  {menuFilterType[0]}
                 </a>
                 <a
                   className="dropdown-item"
                   title="Sausages & Burgers Menu"
                   href={menuPagesHref[1]}
                 >
-                  Sausages & Burgers
+                  {menuFilterType[1]}
                 </a>
                 <a className="dropdown-item" title="Pies & Chicken Menu">
                   Pies & Chicken
