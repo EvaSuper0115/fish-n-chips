@@ -9,14 +9,7 @@ import MenuChips from "./MenuChips";
 import MenuSausage from "./MenuSausage";
 import MenuBurger from "./MenuBurger";
 function App() {
-  const menuHref = "#menu";
-  const menuFilterType = ["Fish", "Chips", "Sausages", "Burgers"];
-  const menuPagesHref = [
-    "#fish-menu",
-    "#chips-menu",
-    "#sausages-menu",
-    "#burgers-menu",
-  ];
+  const mainMenuHref = "#menu";
   const menuItems = [
     { menuTitle: "Fish", menuHref: "#fish-menu" },
     { menuTitle: "Chips", menuHref: "#chips-menu" },
@@ -104,15 +97,11 @@ function App() {
           </ul>
         </div>
       </nav>
-      <PageHero id="Home" menuHref={menuHref} />
+      <PageHero id="Home" menuHref={mainMenuHref} />
       <IntroductionPage id="What-we-make" />
       <OpeningHours id="opening-hours" />
-      <PartyCatering id="party-catering" menuHref={menuHref} />
-      <MenuFilter
-        id="menu"
-        menuFilterTypes={menuFilterType}
-        menuPagehref={menuPagesHref}
-      />
+      <PartyCatering id="party-catering" menuHref={mainMenuHref} />
+      <MenuFilter id="menu" menuItems={menuItems} />
       <MenuFish id="fish-menu" />
       <MenuChips id="chips-menu" />
       <MenuSausage id="sausages-menu" />
