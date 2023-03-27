@@ -13,6 +13,7 @@ import MenuChicken from "./MenuChicken";
 import MenuOthers from "./MenuOthers";
 import MenuChildrensMeal from "./MenuChildrensMeal";
 import MenuMealDeal from "./MenuMealDeal";
+import MenuOAP from "./MenuOAP";
 function App() {
   const mainMenuHref = "#menu";
   const menuItems = [
@@ -122,6 +123,7 @@ function App() {
       <MenuOthers menuDetails={menuItems[6]} />
       <MenuChildrensMeal menuDetails={menuItems[7]} />
       <MenuMealDeal menuDetails={menuItems[8]} />
+      <MenuOAP menuDetails={menuItems[9]} />
     </div>
   );
 }
