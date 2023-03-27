@@ -2,10 +2,10 @@ import React from "react";
 import MenuItemGrid from "./MenuItemGrid";
 export default function MenuBurger(props) {
   return (
-    <div className="MenuBurger" id={props.id}>
+    <div className="MenuBurger" id={props.menuDetails.menuHref}>
       <div className="section-padding">
         <div className="menu-card">
-          <h3 className="itallic-subHeading">Burgers</h3>
+          <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
           <MenuItemGrid
             food="Beef burger"
             price={["Small £2.80", "Large £3.80"]}

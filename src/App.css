@@ -247,8 +247,7 @@ img {
 
   .subHeading,
   .high-light-text,
-  .MenuButton,
-  .itallic-subHeading {
+  .MenuButton {
     transform: scale(0.8);
   }
   .section-padding {

@@ -8,6 +8,7 @@ import MenuFish from "./MenuFish";
 import MenuChips from "./MenuChips";
 import MenuSausage from "./MenuSausage";
 import MenuBurger from "./MenuBurger";
+import MenuPie from "./MenuPie";
 function App() {
   const mainMenuHref = "#menu";
   const menuItems = [
@@ -108,10 +109,11 @@ function App() {
       <OpeningHours id="opening-hours" />
       <PartyCatering id="party-catering" menuHref={mainMenuHref} />
       <MenuFilter id="menu" menuItems={menuItems} />
-      <MenuFish id={menuItems[0].menuHref} />
-      <MenuChips id={menuItems[1].menuHref} />
-      <MenuSausage id={menuItems[2].menuHref} />
-      <MenuBurger id={menuItems[3].menuHref} />
+      <MenuFish menuDetails={menuItems[0]} />
+      <MenuChips menuDetails={menuItems[1]} />
+      <MenuSausage menuDetails={menuItems[2]} />
+      <MenuBurger menuDetails={menuItems[3]} />
+      <MenuPie menuDetails={menuItems[4]} />
     </div>
   );
 }

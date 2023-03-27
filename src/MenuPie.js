@@ -1,8 +1,8 @@
 import React from "react";
 import MenuItemGrid from "./MenuItemGrid";
-export default function MenuFish(props) {
+export default function MenuPie(props) {
   return (
-    <div className="MenuFish" id={props.menuDetails.menuHref}>
+    <div className="MenuPie" id={props.menuDetails.menuHref}>
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
