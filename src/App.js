@@ -68,7 +68,7 @@ function App() {
               </a>
             </li>
             <li className="nav-item dropdown">
-              <a
+              <button
                 className="nav-link high-light-text dropdown-toggle"
                 id="navbarDropdownMenuLink"
                 data-toggle="dropdown"
@@ -77,7 +77,7 @@ function App() {
                 title="Adastral Fish & Chips Menu"
               >
                 Menu
-              </a>
+              </button>
               <div
                 className="dropdown-menu dropdown-menu-text"
                 aria-labelledby="navbarDropdownMenuLink"
