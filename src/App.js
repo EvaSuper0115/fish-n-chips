@@ -17,6 +17,12 @@ function App() {
     "#sausages-menu",
     "#burgers-menu",
   ];
+  const menuItems = [
+    { menuTitle: "Fish", menuHref: "#fish-menu" },
+    { menuTitle: "Chips", menuHref: "#chips-menu" },
+    { menuTitle: "Sausages", menuHref: "#sausages-menu" },
+    { menuTitle: "Burgers", menuHref: "#burgers-menu" },
+  ];
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
@@ -83,14 +89,14 @@ function App() {
                 className="dropdown-menu dropdown-menu-text"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                {menuFilterType.map((MenuType, index) => (
+                {menuItems.map((items, index) => (
                   <a
                     className="dropdown-item"
-                    title={MenuType}
+                    title={`${items.menuTitle} Menu`}
                     key={index}
-                    href={menuPagesHref[index]}
+                    href={items.menuHref}
                   >
-                    {menuFilterType[index]}
+                    {items.menuTitle}
                   </a>
                 ))}
               </div>
