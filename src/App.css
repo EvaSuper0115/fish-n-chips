@@ -221,7 +221,6 @@ img {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 1vh;
-  padding: var(--section-padding);
 }
 .menuType {
   padding: 12px;
@@ -274,6 +273,9 @@ img {
   .section-padding {
     padding: var(--576px-screen-section-padding);
     min-height: 100%;
+  }
+  .page-hero-section-padding {
+    padding: var(--576px-screen-section-padding);
   }
   .menuTypeGrid {
     grid-template-columns: repeat(2, 1fr);
