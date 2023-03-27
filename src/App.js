@@ -4,17 +4,19 @@ import IntroductionPage from "./IntroductionPage";
 import OpeningHours from "./OpeningHours";
 import PartyCatering from "./PartyCatering";
 import MenuFilter from "./MenuFilter";
-import MenuFishnChips from "./MenuFishnChips";
-import MenuSausagesBurgers from "./MenuSausagesBurgers";
+import MenuFish from "./MenuFish";
+import MenuChips from "./MenuChips";
+import MenuSausage from "./MenuSausage";
+import MenuBurger from "./MenuBurger";
 function App() {
   const menuHref = "#menu";
-  const menuFilterType = [
-    "Fish & Chips",
-    "Sausages & Burgers",
-    "Pies & Chicken",
-    "Others",
+  const menuFilterType = ["Fish", "Chips", "Sausages", "Burgers"];
+  const menuPagesHref = [
+    "#fish-menu",
+    "#chips-menu",
+    "#sausages-menu",
+    "#burgers-menu",
   ];
-  const menuPagesHref = ["#fish-n-chips-menu", "#sausages-and-burgers-menu"];
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
@@ -121,8 +123,10 @@ function App() {
         menuFilterTypes={menuFilterType}
         menuPagehref={menuPagesHref}
       />
-      <MenuFishnChips id="fish-n-chips-menu" />
-      <MenuSausagesBurgers id="sausages-and-burgers-menu" />
+      <MenuFish id="fish-menu" />
+      <MenuChips id="chips-menu" />
+      <MenuSausage id="sausages-menu" />
+      <MenuBurger id="burgers-menu" />
     </div>
   );
 }
