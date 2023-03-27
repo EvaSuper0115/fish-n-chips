@@ -11,6 +11,7 @@ import MenuBurger from "./MenuBurger";
 import MenuPie from "./MenuPie";
 import MenuChicken from "./MenuChicken";
 import MenuOthers from "./MenuOthers";
+import MenuChildrensMeal from "./MenuChildrensMeal";
 function App() {
   const mainMenuHref = "#menu";
   const menuItems = [
@@ -118,6 +119,7 @@ function App() {
       <MenuPie menuDetails={menuItems[4]} />
       <MenuChicken menuDetails={menuItems[5]} />
       <MenuOthers menuDetails={menuItems[6]} />
+      <MenuChildrensMeal menuDetails={menuItems[7]} />
     </div>
   );
 }

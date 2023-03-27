@@ -6,6 +6,7 @@ export default function MenuBurger(props) {
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
+
           <MenuItemGrid
             food="Beef burger"
             price={["Small £2.80", "Large £3.80"]}
