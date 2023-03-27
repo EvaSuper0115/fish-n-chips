@@ -83,32 +83,16 @@ function App() {
                 className="dropdown-menu dropdown-menu-text"
                 aria-labelledby="navbarDropdownMenuLink"
               >
-                <a
-                  className="dropdown-item"
-                  title="Fish & Chips Menu"
-                  href={menuPagesHref[0]}
-                >
-                  {menuFilterType[0]}
-                </a>
-                <a
-                  className="dropdown-item"
-                  title="Sausages & Burgers Menu"
-                  href={menuPagesHref[1]}
-                >
-                  {menuFilterType[1]}
-                </a>
-                <a className="dropdown-item" title="Pies & Chicken Menu">
-                  Pies & Chicken
-                </a>
-                <a className="dropdown-item" title="Others Menu">
-                  Others
-                </a>
-                <a className="dropdown-item" title="Children's meal Menu">
-                  Children's meal
-                </a>
-                <a className="dropdown-item" title="Meal deal Menu">
-                  Meal deal
-                </a>
+                {menuFilterType.map((MenuType, index) => (
+                  <a
+                    className="dropdown-item"
+                    title={MenuType}
+                    key={index}
+                    href={menuPagesHref[index]}
+                  >
+                    {menuFilterType[index]}
+                  </a>
+                ))}
               </div>
             </li>
           </ul>
