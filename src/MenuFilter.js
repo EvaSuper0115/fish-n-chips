@@ -8,7 +8,7 @@ export default function MenuFilter(props) {
           <a
             className="menuType white-text"
             key={index}
-            href={menuItem.menuHref}
+            href={`#${menuItem.menuHref}`}
             title={`${menuItem.menuTitle} Menu`}
           >
             {menuItem.menuTitle}

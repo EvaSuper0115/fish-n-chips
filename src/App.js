@@ -11,10 +11,10 @@ import MenuBurger from "./MenuBurger";
 function App() {
   const mainMenuHref = "#menu";
   const menuItems = [
-    { menuTitle: "Fish", menuHref: "#fish-menu" },
-    { menuTitle: "Chips", menuHref: "#chips-menu" },
-    { menuTitle: "Sausages", menuHref: "#sausages-menu" },
-    { menuTitle: "Burgers", menuHref: "#burgers-menu" },
+    { menuTitle: "Fish", menuHref: "fish-menu" },
+    { menuTitle: "Chips", menuHref: "chips-menu" },
+    { menuTitle: "Sausages", menuHref: "sausages-menu" },
+    { menuTitle: "Burgers", menuHref: "burgers-menu" },
   ];
   return (
     <div className="App">
@@ -87,7 +87,7 @@ function App() {
                     className="dropdown-item"
                     title={`${items.menuTitle} Menu`}
                     key={index}
-                    href={items.menuHref}
+                    href={`#${items.menuHref}`}
                   >
                     {items.menuTitle}
                   </a>
@@ -102,10 +102,10 @@ function App() {
       <OpeningHours id="opening-hours" />
       <PartyCatering id="party-catering" menuHref={mainMenuHref} />
       <MenuFilter id="menu" menuItems={menuItems} />
-      <MenuFish id="fish-menu" />
-      <MenuChips id="chips-menu" />
-      <MenuSausage id="sausages-menu" />
-      <MenuBurger id="burgers-menu" />
+      <MenuFish id={menuItems[0].menuHref} />
+      <MenuChips id={menuItems[1].menuHref} />
+      <MenuSausage id={menuItems[2].menuHref} />
+      <MenuBurger id={menuItems[3].menuHref} />
     </div>
   );
 }
