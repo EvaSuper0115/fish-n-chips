@@ -18,7 +18,7 @@ export default function OrderGrid(props) {
               alt="logo-one"
             ></img>
           </span>
-          <span style={{ color: props.textColor }}>Order here</span>
+          <span style={{ color: props.textColor }}>{props.content1}</span>
         </div>
       </a>
       <a
@@ -36,7 +36,7 @@ export default function OrderGrid(props) {
               alt="logo-two"
             ></img>
           </span>
-          <span style={{ color: props.textColor }}>{props.content}</span>
+          <span style={{ color: props.textColor }}>{props.content2}</span>
         </div>
       </a>
     </div>

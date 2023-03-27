@@ -46,7 +46,8 @@ export default function IntroductionPage(props) {
               logo1={JustEatLogo}
               logo2={PhoneIcon}
               link1={`https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button`}
-              content={`07578617349`}
+              content1={`Click here`}
+              content2={`07578617349`}
             />
           </div>
         </div>

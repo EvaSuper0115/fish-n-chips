@@ -43,7 +43,8 @@ export default function OpeningHours(props) {
               logo2={DeliverooLogo}
               link1={`https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button`}
               link2={`https://deliveroo.co.uk/menu/Bournemouth/canford-heath-nuffield-industrial-estate/adastral-fish-and-chips?geohash=gcn8em33sn57`}
-              content={`Order Here`}
+              content1={`Click here`}
+              content2={`Click here`}
             />
           </div>
         </div>
