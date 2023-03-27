@@ -148,7 +148,7 @@ img {
 }
 .itallic-subHeading {
   font-family: var(--sub-heading-font-family);
-  font-size: 24px;
+  font-size: 20px;
   font-style: italic;
 }
 .list-of-info {
@@ -247,7 +247,8 @@ img {
 
   .subHeading,
   .high-light-text,
-  .MenuButton {
+  .MenuButton,
+  .itallic-subHeading {
     transform: scale(0.8);
   }
   .section-padding {
