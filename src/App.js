@@ -10,6 +10,7 @@ import MenuSausage from "./MenuSausage";
 import MenuBurger from "./MenuBurger";
 import MenuPie from "./MenuPie";
 import MenuChicken from "./MenuChicken";
+import MenuOthers from "./MenuOthers";
 function App() {
   const mainMenuHref = "#menu";
   const menuItems = [
@@ -116,6 +117,7 @@ function App() {
       <MenuBurger menuDetails={menuItems[3]} />
       <MenuPie menuDetails={menuItems[4]} />
       <MenuChicken menuDetails={menuItems[5]} />
+      <MenuOthers menuDetails={menuItems[6]} />
     </div>
   );
 }

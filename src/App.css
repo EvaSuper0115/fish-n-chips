@@ -211,9 +211,16 @@ img {
   border-radius: 10px;
   border-width: 0;
 }
+.col-of-MenuItemGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.menuItemCol {
+  display: grid;
+}
 .menu-item-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.7fr 0.3fr;
   grid-gap: 10px;
   padding: 10px 0;
 }
@@ -256,7 +263,8 @@ img {
   .MapEmbed {
     aspect-ratio: 1.5/1;
   }
-  .menu-card-grid {
+  .menu-card-grid,
+  .col-of-MenuItemGrid {
     grid-template-columns: 1fr;
   }
   .menuTypeGrid {
