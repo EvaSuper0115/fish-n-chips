@@ -6,6 +6,8 @@
   --transition: all 200ms ease-in-out;
   --shadow: 2px 1px 5px rgb(109, 109, 109);
   --button-background-color: #4fadd4;
+  --section-padding: 40px 50px;
+  --576px-screen-section-padding: 40px 15px;
 }
 body {
   font-family: var(--main-font-family);
@@ -46,7 +48,7 @@ img {
 }
 .section-padding,
 .page-hero-section-padding {
-  padding: 40px 50px;
+  padding: var(--section-padding);
   min-height: 100vh;
   display: grid;
   align-content: center;
@@ -209,8 +211,7 @@ img {
   border-radius: 10px;
   border-width: 0;
 }
-.menu-item-grid,
-.menu-card-grid {
+.menu-item-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 10px;
@@ -218,13 +219,18 @@ img {
 }
 .menuTypeGrid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   grid-gap: 1vh;
+  padding: var(--section-padding);
 }
 .menuType {
-  padding: 5px;
-  border-radius: 10px;
+  padding: 12px;
+  border-radius: 50px;
   background: var(--button-background-color);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 820px) {
@@ -254,6 +260,9 @@ img {
   .menu-card-grid {
     grid-template-columns: 1fr;
   }
+  .menuTypeGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 @media (max-width: 576px) {
   .brand-name {
@@ -263,7 +272,11 @@ img {
     display: none;
   }
   .section-padding {
-    padding: 40px 15px;
+    padding: var(--576px-screen-section-padding);
     min-height: 100%;
+  }
+  .menuTypeGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: var(--576px-screen-section-padding);
   }
 }

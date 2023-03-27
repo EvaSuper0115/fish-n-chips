@@ -15,6 +15,12 @@ function App() {
     { menuTitle: "Chips", menuHref: "chips-menu" },
     { menuTitle: "Sausages", menuHref: "sausages-menu" },
     { menuTitle: "Burgers", menuHref: "burgers-menu" },
+    { menuTitle: "Pies", menuHref: "pies-menu" },
+    { menuTitle: "Chicken", menuHref: "chicken-menu" },
+    { menuTitle: "Others", menuHref: "others-menu" },
+    { menuTitle: "Children's Meal", menuHref: "children's-meal-menu" },
+    { menuTitle: "Meal Deal", menuHref: "meal-deal-menu" },
+    { menuTitle: "OAP Cod & Chips", menuHref: "OAP-cod-&-chips-menu" },
   ];
   return (
     <div className="App">
