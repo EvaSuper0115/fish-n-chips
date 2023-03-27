@@ -148,7 +148,7 @@ img {
 }
 .itallic-subHeading {
   font-family: var(--sub-heading-font-family);
-  font-size: 20px;
+  font-size: 28px;
   font-style: italic;
 }
 .list-of-info {
