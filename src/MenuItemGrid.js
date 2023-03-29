@@ -7,7 +7,7 @@ export default function MenuItemGrid({ food, price }) {
         <div className="menu-item-col">
           {price.map((price, index) => (
             <div className="menu-item-col" key={index}>
-              {price}
+              {price.size} £{Number(price.price).toFixed(2)}
             </div>
           ))}
         </div>
