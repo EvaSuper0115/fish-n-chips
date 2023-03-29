@@ -9,6 +9,7 @@ export default function OrderGrid(props) {
         href={props.link1}
         target="_blank"
         rel="noreferrer"
+        title={props.linkTitle1}
       >
         <div className="high-light-text">
           <span>
@@ -27,6 +28,7 @@ export default function OrderGrid(props) {
         href={props.link2}
         target="_blank"
         rel="noreferrer"
+        title={props.linkTitle2}
       >
         <div className="">
           <span>

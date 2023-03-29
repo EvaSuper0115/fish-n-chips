@@ -48,6 +48,8 @@ export default function IntroductionPage(props) {
               link1={`https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button`}
               content1={`Click here`}
               content2={`07578617349`}
+              linkTitle1={`Order on Just Eat`}
+              linkTitle2={`Adastral Fish & Chips Telephone Number for Ordering`}
             />
           </div>
         </div>

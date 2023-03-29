@@ -45,6 +45,8 @@ export default function OpeningHours(props) {
               link2={`https://deliveroo.co.uk/menu/Bournemouth/canford-heath-nuffield-industrial-estate/adastral-fish-and-chips?geohash=gcn8em33sn57`}
               content1={`Click here`}
               content2={`Click here`}
+              linkTitle1={`Order on Just Eat`}
+              linkTitle2={`Order on Deliveroo`}
             />
           </div>
         </div>
