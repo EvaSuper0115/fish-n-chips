@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import PageHero from "./PageHero";
 import IntroductionPage from "./IntroductionPage";
 import OpeningHours from "./OpeningHours";
@@ -28,7 +29,18 @@ function App() {
     { menuTitle: "Meal Deal", menuHref: "meal-deal-menu" },
     { menuTitle: "OAP Cod & Chips", menuHref: "OAP-cod-&-chips-menu" },
   ];
-  let addButton = <button>+</button>;
+
+  const [addedItem, setAddedItem] = useState("");
+  function handleAdd(event) {
+    event.preventDefault();
+    setAddedItem(event.target.value);
+    alert(`added ${addedItem} to basket`);
+  }
+  let addButton = (
+    <button className="addButton" onClick={handleAdd}>
+      +
+    </button>
+  );
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
