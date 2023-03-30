@@ -1,16 +1,16 @@
 import { React, useState, useEffect } from "react";
 export default function MenuItemGrid(props) {
   const [addedFood, setAddedFood] = useState("");
+  const [addedPrice, setAddedPrice] = useState(null);
   useEffect(() => {
     if (addedFood !== "") {
-      alert(addedFood);
+      alert(`added ${addedFood} - £${Number(addedPrice).toFixed(2)} to basket`);
     }
   });
   function handleAdd(event, price) {
     event.preventDefault();
-    setAddedFood(
-      `added ${props.food} - £${Number(price).toFixed(2)} to basket`
-    );
+    setAddedFood(props.food);
+    setAddedPrice(price);
   }
   return (
     <div className="MenuItemGrid">
