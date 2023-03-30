@@ -8,6 +8,9 @@ export default function MenuFish(props) {
   ];
   const haddockPrices = [{ price: 7.5 }];
   const plaicePrices = [{ price: 7.5 }];
+  const fishcakePrices = [{ price: 1.3 }];
+  const scampiPrices = [{ price: 4.8 }];
+  const codRoePrices = [{ price: 2 }];
   return (
     <div className="MenuFish" id={props.menuDetails.menuHref}>
       <div className="section-padding">
@@ -27,15 +30,19 @@ export default function MenuFish(props) {
           <small>*in breadcrumbs add 30p*</small>
           <MenuItemGrid
             food="Fishcake"
-            price={["£1.30"]}
+            price={fishcakePrices}
             button={props.button}
           />
           <MenuItemGrid
             food="Scampi (8)"
-            price={["£4.80"]}
+            price={scampiPrices}
             button={props.button}
           />
-          <MenuItemGrid food="Cod roe" price={["£2"]} button={props.button} />
+          <MenuItemGrid
+            food="Cod roe"
+            price={codRoePrices}
+            button={props.button}
+          />
         </div>
       </div>
     </div>

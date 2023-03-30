@@ -19,12 +19,13 @@ export default function MenuItemGrid(props) {
         <div className="menu-item-col">
           {props.price.map((price, index) => (
             <div key={index}>
-              <div className="menu-item-col">
+              <span className="menu-item-col">
                 {price.size} £{Number(price.price).toFixed(2)}
-              </div>
+              </span>
               <span
                 value={addedFood}
                 onClick={(event) => handleAdd(event, price.price)}
+                title={`add ${props.food} to basket`}
               >
                 {props.button}
               </span>
