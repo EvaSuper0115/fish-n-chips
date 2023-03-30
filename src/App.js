@@ -30,17 +30,7 @@ function App() {
     { menuTitle: "OAP Cod & Chips", menuHref: "OAP-cod-&-chips-menu" },
   ];
 
-  const [addedItem, setAddedItem] = useState("");
-  function handleAdd(event) {
-    event.preventDefault();
-    setAddedItem(event.target.value);
-    alert(`added ${addedItem} to basket`);
-  }
-  let addButton = (
-    <button className="addButton" onClick={handleAdd}>
-      +
-    </button>
-  );
+  let addButton = <button className="addButton">+</button>;
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">

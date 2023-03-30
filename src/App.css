@@ -220,7 +220,7 @@ img {
 }
 .menu-item-grid {
   display: grid;
-  grid-template-columns: 0.7fr 0.3fr;
+  grid-template-columns: 0.6fr 0.4fr;
   grid-gap: 10px;
   padding: 10px 0;
 }
