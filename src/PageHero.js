@@ -69,6 +69,7 @@ export default function PageHero(props) {
         <MenuButton menuHref={props.menuHref} />
         <OrderGrid
           textColor="white"
+          class="highlight-background"
           logo1={JustEatLogo}
           logo2={PhoneIcon}
           link1={`https://www.just-eat.co.uk/restaurants-adastral-fish-and-chips-poole/menu/?utm_source=adastralfishnchips.co.uk&utm_medium=restaurant&utm_campaign=order%20button`}

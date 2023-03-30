@@ -4,7 +4,7 @@ export default function MenuItemGrid(props) {
   const [addedPrice, setAddedPrice] = useState(null);
   useEffect(() => {
     if (addedFood !== "") {
-      alert(`added ${addedFood} - £${Number(addedPrice).toFixed(2)} to basket`);
+      alert(`saved ${addedFood} - £${Number(addedPrice).toFixed(2)} to note`);
     }
   });
   function handleAdd(event, price) {
@@ -25,7 +25,7 @@ export default function MenuItemGrid(props) {
               <span
                 value={addedFood}
                 onClick={(event) => handleAdd(event, price.price)}
-                title={`add ${props.food} to basket`}
+                title={`save ${props.food} to note`}
               >
                 {props.button}
               </span>
