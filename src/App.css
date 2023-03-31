@@ -44,7 +44,22 @@ button:hover {
 img {
   border-radius: 5px;
 }
-
+.Note {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  z-index: 9999;
+  padding: 5px;
+  background: var(--highlight-background);
+  border-radius: 10px;
+  color: white;
+}
+.note-title {
+  font-size: 3vh;
+}
+.note-items {
+  font-size: 2.5vh;
+}
 .brandLogo {
   max-width: 20px;
 }
