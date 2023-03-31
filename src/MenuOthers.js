@@ -26,82 +26,40 @@ export default function MenuOthers(props) {
               <MenuItemGrid
                 food="Cheese & onion Fry"
                 price={cheeseOnionFryPrice}
-                button={props.button}
               />
-              <MenuItemGrid
-                food="Onion rings"
-                price={onionRingsPrice}
-                button={props.button}
-              />
+              <MenuItemGrid food="Onion rings" price={onionRingsPrice} />
               <MenuItemGrid
                 food="Mozzarella sticks (4)"
                 price={mozzarellaSticksPrice}
-                button={props.button}
               />
-              <MenuItemGrid
-                food="Buttered roll"
-                price={butteredRollPrice}
-                button={props.button}
-              />
-              <MenuItemGrid
-                food="Pea fritter"
-                price={peaFritterPrice}
-                button={props.button}
-              />
+              <MenuItemGrid food="Buttered roll" price={butteredRollPrice} />
+              <MenuItemGrid food="Pea fritter" price={peaFritterPrice} />
             </div>
             <div className="menuItemCol">
               <MenuItemGrid
                 food="Pineapple fritter"
                 price={pineappleFritterPrice}
-                button={props.button}
               />
               <MenuItemGrid
                 food="Garlic mushrooms"
                 price={garlicMushroomPrice}
-                button={props.button}
               />
               <MenuItemGrid
                 food="Battered burger"
                 price={batteredBurgerPrice}
-                button={props.button}
               />
-              <MenuItemGrid
-                food="Mushy peas"
-                price={mushyPeasPrice}
-                button={props.button}
-              />
-              <MenuItemGrid
-                food="Curry sauce"
-                price={currySaucePrice}
-                button={props.button}
-              />
+              <MenuItemGrid food="Mushy peas" price={mushyPeasPrice} />
+              <MenuItemGrid food="Curry sauce" price={currySaucePrice} />
             </div>
             <div className="menuItemCol">
-              <MenuItemGrid
-                food="Pickled onion"
-                price={pickledOnionPrice}
-                button={props.button}
-              />
-              <MenuItemGrid
-                food="Pickled egg"
-                price={pickledEggPrice}
-                button={props.button}
-              />
+              <MenuItemGrid food="Pickled onion" price={pickledOnionPrice} />
+              <MenuItemGrid food="Pickled egg" price={pickledEggPrice} />
               <MenuItemGrid
                 food="Pickled gherkin"
                 price={pickledGherkinPrice}
-                button={props.button}
               />
-              <MenuItemGrid
-                food="Canned drink"
-                price={cannedDrinksPrice}
-                button={props.button}
-              />
-              <MenuItemGrid
-                food="Fruit Shoot"
-                price={fruitShootPrice}
-                button={props.button}
-              />
+              <MenuItemGrid food="Canned drink" price={cannedDrinksPrice} />
+              <MenuItemGrid food="Fruit Shoot" price={fruitShootPrice} />
             </div>
           </div>
         </div>

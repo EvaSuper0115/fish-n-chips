@@ -17,31 +17,17 @@ export default function MenuSausage(props) {
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
-          <MenuItemGrid
-            food="Plain sausage"
-            price={plainPrices}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Battered sausage"
-            price={batteredPrices}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Saveloy"
-            price={saveloyPrice}
-            button={props.button}
-          />
+          <MenuItemGrid food="Plain sausage" price={plainPrices} />
+          <MenuItemGrid food="Battered sausage" price={batteredPrices} />
+          <MenuItemGrid food="Saveloy" price={saveloyPrice} />
           <MenuItemGrid
             food="Bigfoot  *served in a baguette*"
             price={bigfootPrice}
-            button={props.button}
           />
 
           <MenuItemGrid
             food="Giant battered sausage"
             price={giantBatteredSausagePrice}
-            button={props.button}
           />
         </div>
       </div>

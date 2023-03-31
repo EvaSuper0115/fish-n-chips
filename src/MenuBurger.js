@@ -28,35 +28,17 @@ export default function MenuBurger(props) {
         <div className="menu-card">
           <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
 
-          <MenuItemGrid
-            food="Beef burger"
-            price={beefBurgerPrice}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Cheese burger"
-            price={cheeseBurgerPrice}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Chicken burger"
-            price={chickenBurgerPrice}
-            button={props.button}
-          />
+          <MenuItemGrid food="Beef burger" price={beefBurgerPrice} />
+          <MenuItemGrid food="Cheese burger" price={cheeseBurgerPrice} />
+          <MenuItemGrid food="Chicken burger" price={chickenBurgerPrice} />
           <MenuItemGrid
             food="Spicy chicken burger"
             price={spicyChickenBurgerPrice}
-            button={props.button}
           />
-          <MenuItemGrid
-            food="Veggie burger"
-            price={veggieBurgerPrice}
-            button={props.button}
-          />
+          <MenuItemGrid food="Veggie burger" price={veggieBurgerPrice} />
           <MenuItemGrid
             food="Extra cheese or pineapple"
             price={extraCheesePineapplePrice}
-            button={props.button}
           />
         </div>
       </div>

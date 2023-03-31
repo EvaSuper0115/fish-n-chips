@@ -30,8 +30,6 @@ function App() {
     { menuTitle: "OAP Cod & Chips", menuHref: "OAP-cod-&-chips-menu" },
   ];
 
-  let addButton = <button className="highlight-background">Save</button>;
-
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
@@ -118,16 +116,16 @@ function App() {
       <OpeningHours id="opening-hours" />
       <PartyCatering id="party-catering" menuHref={mainMenuHref} />
       <MenuFilter id="menu" menuItems={menuItems} />
-      <MenuFish menuDetails={menuItems[0]} button={addButton} />
-      <MenuChips menuDetails={menuItems[1]} button={addButton} />
-      <MenuSausage menuDetails={menuItems[2]} button={addButton} />
-      <MenuBurger menuDetails={menuItems[3]} button={addButton} />
-      <MenuPie menuDetails={menuItems[4]} button={addButton} />
-      <MenuChicken menuDetails={menuItems[5]} button={addButton} />
-      <MenuOthers menuDetails={menuItems[6]} button={addButton} />
-      <MenuChildrensMeal menuDetails={menuItems[7]} button={addButton} />
-      <MenuMealDeal menuDetails={menuItems[8]} button={addButton} />
-      <MenuOAP menuDetails={menuItems[9]} button={addButton} />
+      <MenuFish menuDetails={menuItems[0]} />
+      <MenuChips menuDetails={menuItems[1]} />
+      <MenuSausage menuDetails={menuItems[2]} />
+      <MenuBurger menuDetails={menuItems[3]} />
+      <MenuPie menuDetails={menuItems[4]} />
+      <MenuChicken menuDetails={menuItems[5]} />
+      <MenuOthers menuDetails={menuItems[6]} />
+      <MenuChildrensMeal menuDetails={menuItems[7]} />
+      <MenuMealDeal menuDetails={menuItems[8]} />
+      <MenuOAP menuDetails={menuItems[9]} />
     </div>
   );
 }

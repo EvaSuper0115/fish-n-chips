@@ -21,27 +21,14 @@ export default function MenuChips(props) {
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
-          <MenuItemGrid food="Chips" price={chipPrices} button={props.button} />
-          <MenuItemGrid
-            food="Chip butty"
-            price={chipButtyPrice}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Cheesy chips"
-            price={cheesyChipPrice}
-            button={props.button}
-          />
+          <MenuItemGrid food="Chips" price={chipPrices} />
+          <MenuItemGrid food="Chip butty" price={chipButtyPrice} />
+          <MenuItemGrid food="Cheesy chips" price={cheesyChipPrice} />
 
-          <MenuItemGrid
-            food="Curry chips"
-            price={curryChipPrice}
-            button={props.button}
-          />
+          <MenuItemGrid food="Curry chips" price={curryChipPrice} />
           <MenuItemGrid
             food="Cheesy curry chips"
             price={cheeseCurryChipPrice}
-            button={props.button}
           />
         </div>
       </div>

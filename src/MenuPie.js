@@ -8,21 +8,9 @@ export default function MenuPie(props) {
         <div className="menu-card">
           <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
 
-          <MenuItemGrid
-            food="Chicken & mushroom pie"
-            price={piePrice}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Steak & kidney pie"
-            price={piePrice}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Beef & onion pie"
-            price={piePrice}
-            button={props.button}
-          />
+          <MenuItemGrid food="Chicken & mushroom pie" price={piePrice} />
+          <MenuItemGrid food="Steak & kidney pie" price={piePrice} />
+          <MenuItemGrid food="Beef & onion pie" price={piePrice} />
         </div>
       </div>
     </div>

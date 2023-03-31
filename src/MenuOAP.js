@@ -7,11 +7,7 @@ export default function MenuOAP(props) {
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{`${props.menuDetails.menuTitle} `}</h3>
-          <MenuItemGrid
-            food="OAP cod & chips"
-            price={OAPprice}
-            button={props.button}
-          />
+          <MenuItemGrid food="OAP cod & chips" price={OAPprice} />
         </div>
       </div>
     </div>

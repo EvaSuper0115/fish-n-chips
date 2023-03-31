@@ -10,25 +10,18 @@ export default function MenuChildrensMeal(props) {
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{`${props.menuDetails.menuTitle} (including a drink)`}</h3>
-          <MenuItemGrid
-            food="Cod & chips"
-            price={childrenCodChipsPrice}
-            button={props.button}
-          />
+          <MenuItemGrid food="Cod & chips" price={childrenCodChipsPrice} />
           <MenuItemGrid
             food="Nuggets & chips"
             price={childrenNuggestChipsPrice}
-            button={props.button}
           />
           <MenuItemGrid
             food="Fishcake & chips"
             price={childrenFishcakeChipsPrice}
-            button={props.button}
           />
           <MenuItemGrid
             food="Sausage & chips"
             price={childrenSausageChipsPrice}
-            button={props.button}
           />
         </div>
       </div>

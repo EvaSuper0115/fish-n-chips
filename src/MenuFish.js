@@ -17,38 +17,14 @@ export default function MenuFish(props) {
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
-          <MenuItemGrid food="Cod" price={codPrices} button={props.button} />
-          <MenuItemGrid
-            food="Haddock"
-            price={haddockPrices}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Plaice"
-            price={plaicePrices}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="*in breadcrumbs*"
-            price={InBreadcrumbsPrices}
-            button={props.button}
-          />
+          <MenuItemGrid food="Cod" price={codPrices} />
+          <MenuItemGrid food="Haddock" price={haddockPrices} />
+          <MenuItemGrid food="Plaice" price={plaicePrices} />
+          <MenuItemGrid food="*in breadcrumbs*" price={InBreadcrumbsPrices} />
 
-          <MenuItemGrid
-            food="Fishcake"
-            price={fishcakePrices}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Scampi (8)"
-            price={scampiPrices}
-            button={props.button}
-          />
-          <MenuItemGrid
-            food="Cod roe"
-            price={codRoePrices}
-            button={props.button}
-          />
+          <MenuItemGrid food="Fishcake" price={fishcakePrices} />
+          <MenuItemGrid food="Scampi (8)" price={scampiPrices} />
+          <MenuItemGrid food="Cod roe" price={codRoePrices} />
         </div>
       </div>
     </div>

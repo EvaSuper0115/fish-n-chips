@@ -11,30 +11,22 @@ export default function MenuMealDeal(props) {
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{`${props.menuDetails.menuTitle} (including a canned drink)`}</h3>
-          <MenuItemGrid
-            food="Cod & chips"
-            price={mealDealCodChipsPrice}
-            button={props.button}
-          />
+          <MenuItemGrid food="Cod & chips" price={mealDealCodChipsPrice} />
           <MenuItemGrid
             food="Cheese burger & chips"
             price={mealDealCheeseBurgerChipsPrice}
-            button={props.button}
           />
           <MenuItemGrid
             food="Chicken nuggets & chips"
             price={mealDealChickenNuggetChipsPrice}
-            button={props.button}
           />
           <MenuItemGrid
             food="Large Sausage & chips"
             price={mealDealLargeSuasageChipsPrice}
-            button={props.button}
           />
           <MenuItemGrid
             food="Fishcake & chips"
             price={mealDealFishcakeChipsPrice}
-            button={props.button}
           />
         </div>
       </div>
