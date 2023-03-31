@@ -4,31 +4,31 @@ import SaveButton from "./SaveButton";
 export default function MenuItemGrid(props) {
   let button = <button className="highlight-background">Save</button>;
   const [note, setNote] = useState(<div></div>);
-  const [addedFood, setAddedFood] = useState("");
-  const [addedPrice, setAddedPrice] = useState(null);
+
+  const [addedItems, setAddedItems] = useState([]);
   useEffect(() => {
-    if (addedFood !== "") {
+    if (addedItems.length > 0) {
+      const selectedItems = addedItems.map((item, index) => (
+        <tr key={index}>
+          <td className="note-items">{item.food}</td>
+          <td className="note-items">£{Number(item.price).toFixed(2)}</td>
+        </tr>
+      ));
       setNote(
         <div>
           <h4 className="note-title">My notes</h4>
           <table className="note-table">
-            <tbody>
-              <tr>
-                <td className="note-items">{addedFood}</td>
-                <td className="note-items">£{Number(addedPrice).toFixed(2)}</td>
-              </tr>
-            </tbody>
+            <tbody>{selectedItems}</tbody>
           </table>
           <h4 className="note-title">order no. 07578617349</h4>
         </div>
       );
     }
-  }, [addedFood, addedPrice]);
+  }, [addedItems]);
 
   function handleAdd(event, price) {
     event.preventDefault();
-    setAddedFood(props.food);
-    setAddedPrice(price);
+    setAddedItems([...addedItems, { food: props.food, price: price }]);
   }
   return (
     <div className="MenuItemGrid">
