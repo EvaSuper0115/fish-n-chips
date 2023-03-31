@@ -1,10 +1,14 @@
 import { React, useState, useEffect } from "react";
+import Note from "./Note";
 export default function MenuItemGrid(props) {
+  const [note, setNote] = useState("");
+
   const [addedFood, setAddedFood] = useState("");
   const [addedPrice, setAddedPrice] = useState(null);
   useEffect(() => {
     if (addedFood !== "") {
-      alert(`saved ${addedFood} - £${Number(addedPrice).toFixed(2)} to note`);
+      setNote(`saved 
+      ${addedFood} - £${Number(addedPrice).toFixed(2)} to note`);
     }
   });
   function handleAdd(event, price) {
@@ -32,6 +36,7 @@ export default function MenuItemGrid(props) {
           ))}
         </div>
       </div>
+      <Note note={note} />
     </div>
   );
 }

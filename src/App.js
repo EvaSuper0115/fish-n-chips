@@ -14,6 +14,7 @@ import MenuOthers from "./MenuOthers";
 import MenuChildrensMeal from "./MenuChildrensMeal";
 import MenuMealDeal from "./MenuMealDeal";
 import MenuOAP from "./MenuOAP";
+
 function App() {
   const mainMenuHref = "#menu";
   const menuItems = [
@@ -30,6 +31,7 @@ function App() {
   ];
 
   let addButton = <button className="highlight-background">Save</button>;
+
   return (
     <div className="App">
       <nav className="navbar sticky-top navbar-expand-lg navbar-decoration">
