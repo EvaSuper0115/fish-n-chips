@@ -33,11 +33,11 @@ export default function MenuSausage(props) {
             button={props.button}
           />
           <MenuItemGrid
-            food="Bigfoot"
+            food="Bigfoot  *served in a baguette*"
             price={bigfootPrice}
             button={props.button}
           />
-          <small>*served in a baguette*</small>
+
           <MenuItemGrid
             food="Giant battered sausage"
             price={giantBatteredSausagePrice}
