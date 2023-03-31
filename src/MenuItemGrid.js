@@ -11,13 +11,13 @@ export default function MenuItemGrid(props) {
       setNote(
         <div>
           <h4 className="note-title">My notes</h4>
-          <table>
-            <thead>
+          <table className="note-table">
+            <tbody>
               <tr>
-                <th className="note-items">{addedFood}</th>
-                <th className="note-items">£{Number(addedPrice).toFixed(2)}</th>
+                <td className="note-items">{addedFood}</td>
+                <td className="note-items">£{Number(addedPrice).toFixed(2)}</td>
               </tr>
-            </thead>
+            </tbody>
           </table>
           <h4 className="note-title">order no. 07578617349</h4>
         </div>

@@ -54,6 +54,9 @@ img {
   border-radius: 10px;
   color: white;
 }
+.note-table {
+  width: 100%;
+}
 .note-title {
   font-size: 3vh;
 }
