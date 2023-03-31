@@ -1,4 +1,4 @@
 import React from "react";
 export default function SaveButton(props) {
-  return <div className="SaveButton">{props.button}</div>;
+  return <span className="SaveButton">{props.button}</span>;
 }
