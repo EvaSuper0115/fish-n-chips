@@ -23,7 +23,6 @@ export default function MenuItemGrid(props) {
                 {price.size} £{Number(price.price).toFixed(2)}
               </span>
               <span
-                value={addedFood}
                 onClick={(event) => handleAdd(event, price.price)}
                 title={`save ${props.food} to note`}
               >
