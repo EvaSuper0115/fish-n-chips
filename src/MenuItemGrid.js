@@ -40,7 +40,7 @@ export default function MenuItemGrid(props) {
       <div className="menu-item-grid">
         <div className="menu-item-col">{props.food}</div>
         <div className="menu-item-col">
-          {props.prices.map((item, index) => (
+          {props.price.map((item, index) => (
             <div key={index}>
               <span className="menu-item-col">
                 {item.size} £{Number(item.price).toFixed(2)}

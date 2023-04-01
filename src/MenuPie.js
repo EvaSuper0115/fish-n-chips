@@ -1,16 +1,34 @@
 import React from "react";
 import MenuItemGrid from "./MenuItemGrid";
 export default function MenuPie(props) {
-  const piePrice = [{ price: 3.8 }];
+  const menuItems = [
+    {
+      food: "Chicken & mushroom pie",
+      prices: [{ price: 3.8 }],
+    },
+    {
+      food: "Steak & kidney pie",
+      prices: [{ price: 3.8 }],
+    },
+    {
+      food: "Beef & onion pie",
+      prices: [{ price: 3.8 }],
+    },
+  ];
+
   return (
     <div className="MenuPie" id={props.menuDetails.menuHref}>
       <div className="section-padding">
         <div className="menu-card">
           <h3 className="itallic-subHeading">{props.menuDetails.menuTitle}</h3>
 
-          <MenuItemGrid food="Chicken & mushroom pie" price={piePrice} />
-          <MenuItemGrid food="Steak & kidney pie" price={piePrice} />
-          <MenuItemGrid food="Beef & onion pie" price={piePrice} />
+          {menuItems.map((item) => (
+            <MenuItemGrid
+              key={item.food}
+              food={item.food}
+              price={item.prices}
+            />
+          ))}
         </div>
       </div>
     </div>
