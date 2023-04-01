@@ -22,7 +22,7 @@ export default function MenuItemGrid(props) {
           <table className="note-table">
             <tbody>{selectedItems}</tbody>
           </table>
-          <h4 className="note-title">order no. 07578617349</h4>
+          <h4 className="note-title">call: 07578-617349</h4>
         </div>
       );
     }
@@ -34,7 +34,6 @@ export default function MenuItemGrid(props) {
       ...addedItems,
       { food: props.food, size: size, price: price },
     ]);
-    console.log(size);
   }
   return (
     <div className="MenuItemGrid">
