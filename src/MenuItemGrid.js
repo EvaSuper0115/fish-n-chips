@@ -10,7 +10,9 @@ export default function MenuItemGrid(props) {
     if (addedItems.length > 0) {
       const selectedItems = addedItems.map((item, index) => (
         <tr key={index}>
-          <td className="note-items">{item.food}</td>
+          <td className="note-items">
+            {item.size} {item.food}
+          </td>
           <td className="note-items">£{Number(item.price).toFixed(2)}</td>
         </tr>
       ));
@@ -26,9 +28,13 @@ export default function MenuItemGrid(props) {
     }
   }, [addedItems]);
 
-  function handleAdd(event, price) {
+  function handleAdd(event, size, price) {
     event.preventDefault();
-    setAddedItems([...addedItems, { food: props.food, price: price }]);
+    setAddedItems([
+      ...addedItems,
+      { food: props.food, size: size, price: price },
+    ]);
+    console.log(size);
   }
   return (
     <div className="MenuItemGrid">
@@ -41,7 +47,7 @@ export default function MenuItemGrid(props) {
                 {price.size} £{Number(price.price).toFixed(2)}
               </span>
               <span
-                onClick={(event) => handleAdd(event, price.price)}
+                onClick={(event) => handleAdd(event, price.size, price.price)}
                 title={`save ${props.food} to note`}
               >
                 <SaveButton button={button} />
